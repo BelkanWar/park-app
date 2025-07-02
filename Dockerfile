@@ -18,7 +18,7 @@ COPY . .
 # 設定 Flask 應用程式的環境變數
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
-ENV FLASK_ENV=production # 在生產環境中關閉 debug 模式
+ENV FLASK_ENV=production
 
 # 暴露應用程式運行所需的端口 (Cloud Run 預設監聽 8080)
 EXPOSE 8080
